@@ -25,10 +25,12 @@ const SearchScreen=()=>{
              />
          {errorMessage?<Text>{errorMessage}</Text>:null}
          <ScrollView>
+            
          <ResultList results={filterResultByPrice('$')} title="Cost Effective" />
          <ResultList results={filterResultByPrice('$$')} title="Bit Pricier" />
          <ResultList results={filterResultByPrice('$$$')} title="Big Spender"/>
          </ScrollView>
+         
     </>
 
     )};
@@ -37,3 +39,6 @@ const SearchScreen=()=>{
 const styles=StyleSheet.create({});
 
 export default SearchScreen;
+
+
+//This is main screen
